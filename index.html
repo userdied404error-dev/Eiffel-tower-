@@ -151,7 +151,194 @@
   </section>
 
   <section id="history">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eiffel Tower</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+    body{
+      background:#000;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:url('https://images.unsplash.com/photo-1549144511-f099e773c147?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+    }
+
+    header .content{
+      background:rgba(0,0,0,0.5);
+      padding:30px;
+      border-radius:10px;
+    }
+
+    header h1{
+      font-size:4rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.3rem;
+    }
+
+    nav{
+      background:#222;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:#f0c040;
+    }
+
+    section{
+      padding:60px 20px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      margin-top:20px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .gallery img{
+      width:100%;
+      border-radius:10px;
+      height:250px;
+      object-fit:cover;
+    }
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    button{
+      margin-top:20px;
+      padding:12px 25px;
+      border:none;
+      background:#f0c040;
+      color:#222;
+      font-size:1rem;
+      border-radius:5px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#d9a520;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="content">
+      <h1>Eiffel Tower</h1>
+      <p>The Iconic Symbol of Paris</p>
+      <button onclick="showMessage()">Learn More</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#history">History</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+
+  <section id="about">
+    <h2 style="color:white;">About the Eiffel Tower</h2>
+
+    <div class="card">
+      <p>
+        The Eiffel Tower is one of the most famous landmarks in the world,
+        located in Paris, France. It was designed by Gustave Eiffel and
+        completed in 1889 for the World's Fair.
+      </p>
+
+      <p style="margin-top:15px;">
+        Standing at 330 meters tall, the tower attracts millions of visitors
+        every year and offers breathtaking views of Paris.
+      </p>
+    </div>
+  </section>
+
+  <section id="history">
     <h2 style="color:white;">History</h2>
+
+    <div class="card">
+      <p>
+        Construction of the Eiffel Tower began in 1887 and took about two
+        years to complete. Initially criticized by artists and intellectuals,
+        it later became one of the world's most admired structures.
+      </p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 style="color:white;">Gallery</h2>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=800&auto=format&fit=crop" alt="Eiffel Tower">
+      
+      <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=800&auto=format&fit=crop" alt="Paris Eiffel Tower">
+
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop" alt="Eiffel Tower Night">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Eiffel Tower Website | Designed with HTML & CSS</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Welcome to the Eiffel Tower website!");
+    }
+  </script>
+
+</body>
+</html>
 
     <div class="card">
       <p>
